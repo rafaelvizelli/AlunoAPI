@@ -1,0 +1,16 @@
+﻿namespace AlunoAPI.Domain.Entities
+{
+    public class Aluno
+    {
+        public Guid Id { get; set; }
+        public string FirstName { get; set; }
+        public string Email { get; set; }
+        public DateTime CreatedAt { get; set; }
+
+        public Aluno()
+        {
+            Id = Guid.NewGuid();
+            CreatedAt = DateTime.Now;
+        }
+    }
+}
